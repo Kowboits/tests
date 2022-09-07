@@ -11,6 +11,5 @@ class TestName_serch(unittest.TestCase):
         ['1','Такая полка уже сужествует'],
     ]))
     def test_add_self(self, shelf, ans):
-        mock.builtins.input = lambda _: numb
         mock.builtins.input = lambda _: shelf
         self.assertEqual(add_self(), ans)
